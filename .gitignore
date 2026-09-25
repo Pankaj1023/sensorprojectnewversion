@@ -25,3 +25,18 @@ dist/
 # OS files
 .DS_Store
 Thumbs.db
+
+
+
+
+
+
+
+
+Docker Desktop Installer.exe
+.venv/
+__pycache__/
+*.pyc
+.env
+prediction_artifacts/
+logs/

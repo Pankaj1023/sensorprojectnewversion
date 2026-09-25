@@ -41,7 +41,7 @@ class DataTransformation:
         self.utils = MainUtils()
 
     @staticmethod
-    def get_data(feature_store_file_path :str)->pd.Dataframe:
+    def get_data(feature_store_file_path :str)->pd.DataFrame:
 
         try:
             data = pd.read_csv(feature_store_file_path)
@@ -100,7 +100,7 @@ class DataTransformation:
                 X, y, test_size=0.2
             )
 
-            preprocessor = self.get_data_transformer_objects()
+            preprocessor = self.get_data_transformer_object()
 
             X_train_scaled = preprocessor.fit_transform(X_train)
             X_test_scaled = preprocessor.transform(X_test)

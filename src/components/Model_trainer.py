@@ -230,7 +230,7 @@ class ModelTrainer:
               )
 
 
-              os.makedirs(os.path.dirname(self.model_trainer_config.trained_model_path),exist = True)
+              os.makedirs(os.path.dirname(self.model_trainer_config.trained_model_path),exist_ok= True)
 
 
               self.utils.save_object(
